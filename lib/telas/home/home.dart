@@ -73,12 +73,13 @@ class HomeState extends State<Home> {
     return Container(
       height: 200,
       decoration: BoxDecoration(
-          gradient: LinearGradient(
-              begin: FractionalOffset.topCenter,
-              end: FractionalOffset.bottomCenter,
+          gradient: RadialGradient(
+           center: Alignment(0.8,0.8),   
+              focal: Alignment(1,1),
+              radius: 0.8,
               colors: [
-            Colors.transparent,
-            Colors.black.withOpacity(0.7),
+                Colors.black.withOpacity(0.6),
+                Colors.transparent.withOpacity(0.05),
           ])),
     );
   }
@@ -86,8 +87,8 @@ class HomeState extends State<Home> {
   Widget _construirTextoCard(texto) {
     return Positioned(
       bottom: 10,
-      left: 10,
-      child: Text(texto, style: TextStyle(fontSize: 20, color: Colors.white)),
+      right: 10,
+      child: Text(texto, style: TextStyle(fontSize: 27, color: Colors.white)),
     );
   }
 
