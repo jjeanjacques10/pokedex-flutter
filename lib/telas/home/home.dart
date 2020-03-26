@@ -98,7 +98,7 @@ class HomeState extends State<Home> {
 
   Widget _construirAppBar() {
     return AppBar(
-      title: Text('Pokedex do Jean'),
+      title: Text('Pokedex'),
       actions: <Widget>[
         IconButton(
             icon: Icon(
